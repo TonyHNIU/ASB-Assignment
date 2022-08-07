@@ -65,3 +65,14 @@
   position: absolute;
   color: red;
 }
+
+.navContent {
+  display: grid;
+  justify-content: space-between;
+  align-items: center;
+  height: 3.75rem;
+  font-size: 3rem;
+  padding: 12rem;
+  text-decoration: none;
+  color: black;
+}
