@@ -10,8 +10,8 @@ const App: React.FunctionComponent = () => {
   return (
     <div className="App">
       <div>
-        <nav>
-          <div onClick={showSidebar}>
+        <nav className="nav">
+          <div className="navIcon" onClick={showSidebar}>
             {sidebar === false ? <AiOutlineMenu /> : <AiOutlineArrowLeft />}
           </div>
         </nav>
