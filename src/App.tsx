@@ -39,8 +39,11 @@ const App: React.FunctionComponent = () => {
           </div>
         </nav>
       </div>
-      <form onSubmit={onSubmit}>
-        <div>Welcome,&nbsp;</div>
+      <form onSubmit={onSubmit} className="App-content">
+        <div>
+          Welcome,&nbsp;
+          {showName}
+        </div>
         <div>
           <input
             {...register("cardnumber", {
