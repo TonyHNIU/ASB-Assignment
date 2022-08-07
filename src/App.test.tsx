@@ -1,9 +1,14 @@
-import React from 'react';
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import App from "./App";
+import React from "react";
+import { render, fireEvent, act, screen } from "@testing-library/react";
 
-test('renders learn react link', () => {
+test("handle onClick", () => {
+  const onClick = jest.fn();
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+
+  const divElement = screen.getByRole("contentinfo");
+
+  fireEvent.click(divElement);
+
+  expect(onClick).toHaveReturned();
 });
